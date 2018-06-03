@@ -481,6 +481,7 @@ void report_realtime_status()
 #else
       printFloat_CoordValue(gc_state.position[idx]);
 #endif
+      if (idx < (N_AXIS-1)) { printPgmString(PSTR(",")); }
     }
   }
         
